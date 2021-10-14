@@ -1,0 +1,61 @@
+#general {
+  border: 1px solid black;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: black;
+  font-size: 40px;
+  display: inline;
+  position: relative;
+top: 10px;
+left: 30px;
+}
+h3 {
+  display: inline;
+}
+img {
+  width: 220px;
+position: relative;
+  float: right;
+  margin: 10px;
+  padding: 0px;
+  right: 90px;
+  top: 20px;
+
+}
+.divClass2 {
+display: inline;
+position: relative;
+font-size: 19px;
+top: 10;
+left: 0;
+} 
+#Estudios {
+display: flex;
+justify-content: center;
+align-items: center;
+border: 10px solid lightblue;
+font-size: 25px;
+}
+
+.divClass3 {
+position: relative;
+margin-top: 70px;
+}
+#expLab {
+display: flex;
+justify-content:center;
+align-items: center;
+border: 10px solid lightblue;
+} 
+.divClass4 {
+position: relative;
+margin-top: 20px;
+} 
+
+.divClass5 {
+position: relative;
+margin-top: 60px;
+}

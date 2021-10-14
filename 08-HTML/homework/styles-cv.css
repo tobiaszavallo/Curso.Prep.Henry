@@ -1,0 +1,34 @@
+#principal {
+    border: 1px solid black;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+}
+h2 {
+    position: relative;
+    left: 30px;
+    font-size: 50px;
+}
+
+fieldset {
+    margin-bottom: 10px;
+}
+
+legend {
+    border: solid 1px violet;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 20px;
+    background: lightblue;
+}
+#foto {
+    margin: 5px;
+    border: solid 4px black;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+body {
+    background: url(imagess.jpg);
+    background-size: 75%;
+}
