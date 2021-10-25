@@ -10,6 +10,8 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  var nuevoArray = Object.entries(objeto);
+  return nuevoArray;
 }
 
 
@@ -18,14 +20,35 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  var obj = {};
+
+  for(var i = 0; i < string.length; i++){
+    if(!obj[string[i]]){
+      obj[string[i]] = 0;
+    }  
+    obj[string[i]] += 1;
+  }
+  return obj;
 }
+
 
 
 function capToFront(s) {
   //Realiza una función que reciba como parámetro un string y mueva todas las letras mayúsculas
   //al principio de la palabra.
-  //Ejemplo: soyHENRY -> HENRYsoy
+  //Ejemplo: soyHENRY -> EHNRYsoy
   //Escribe tu código aquí
+  var mayusculas = "";
+  var minusculas = "";
+  for (var i = 0; i < s.length; i++) {
+    if (s[i] === s[i].toUpperCase()) {
+      mayusculas = mayusculas + s[i];
+    }
+    else {
+      minusculas = minusculas + s[i];
+    }
+  }
+  return mayusculas + minusculas;
 }
 
 
@@ -35,6 +58,11 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+  var invertidas = "";
+   for(var i = str.length -1; i >= 0; i--) {
+     invertidas = invertidas + str[i];
+   };
+  return invertidas.split(" ").reverse().join(" ");
 } 
 
 
@@ -43,6 +71,14 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+  var numInvertido = 0;
+  numInvertido = Number(numero.toString().split("").reverse().join(""));
+  if (numInvertido === numero) {
+    return "Es capicua";
+  }
+  else {
+    return "No es capicua";
+  }
 }
 
 
